@@ -1,0 +1,33 @@
+{
+  "name": "icks",
+  "version": "0.0.1",
+  "description": "The \"icks\" repository on GitHub is a physics library designed specifically for JavaScript developers. This open-source project aims to provide a robust set of tools and functions to facilitate the integration of physics simulations and calculations into web applications. It allows JavaScript developers to incorporate physics-based behavior and simulations seamlessly into their projects, enhancing the realism and interactivity of web applications. The \"icks\" repository serves as a central hub for the development and distribution of this physics library, offering documentation, source code, and resources to help developers leverage its capabilities effectively in their web development projects. Overall, \"icks\" is a valuable resource for JavaScript developers looking to bring physics simulations and dynamics into their web applications.",
+  "main": "lib.js",
+  "scripts": {
+    "dev": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesdevpro/icks.git"
+  },
+  "keywords": [
+    "physics",
+    "icks",
+    "physcis",
+    "library",
+    "javascript",
+    "lerna",
+    "npm",
+    "nodejs"
+  ],
+  "author": " <Wesley Ford, wes@wesdevpro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wesdevpro/icks/issues"
+  },
+  "homepage": "https://github.com/wesdevpro/icks#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
