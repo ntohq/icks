@@ -1,33 +1,41 @@
 {
   "name": "icks",
+  "private": true,
   "version": "0.0.1",
-  "description": "The \"icks\" repository on GitHub is a physics library designed specifically for JavaScript developers. This open-source project aims to provide a robust set of tools and functions to facilitate the integration of physics simulations and calculations into web applications. It allows JavaScript developers to incorporate physics-based behavior and simulations seamlessly into their projects, enhancing the realism and interactivity of web applications. The \"icks\" repository serves as a central hub for the development and distribution of this physics library, offering documentation, source code, and resources to help developers leverage its capabilities effectively in their web development projects. Overall, \"icks\" is a valuable resource for JavaScript developers looking to bring physics simulations and dynamics into their web applications.",
-  "main": "lib.js",
-  "scripts": {
-    "dev": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A Javascript Library created to help you implament all the \"icks\" (Physics, Dynamics, Mechanics, ect) in engeneering into your programs. This Library will include an advanced collection of tools and a physics engien.",
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "node-lib",
+    "physics"
+  ],
+  "author": "Wesley Ford <wes@wesdev.pro>",
+  "homepage": "http://icks.ntohqdevelopers.com",
+  "license": "MIT",
+  "main": "lib/icks.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wesdevpro/icks.git"
+    "url": "git+https://github.com/ntohq/icks.git"
   },
-  "keywords": [
-    "physics",
-    "icks",
-    "physcis",
-    "library",
-    "javascript",
-    "lerna",
-    "npm",
-    "nodejs"
-  ],
-  "author": " <Wesley Ford, wes@wesdevpro.com>",
-  "license": "MIT",
+  "scripts": {
+    "test": "node ./__tests__/icks.test.js",
+    "test:unit": "node ./__tests__/unit.test.js"
+  },
   "bugs": {
-    "url": "https://github.com/wesdevpro/icks/issues"
+    "url": "https://github.com/ntohq/icks/issues"
   },
-  "homepage": "https://github.com/wesdevpro/icks#readme",
-  "devDependencies": {
+  "dependencies": {
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "vitest": "^0.34.6"
   }
 }

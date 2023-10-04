@@ -1,11 +1,34 @@
 {
   "name": "docs",
   "private": true,
+  "version": "0.0.1",
+  "description": "The documentation static website for the ICKS Lib",
   "type": "module",
+  "author": "Wesley Ford <wes@wesdev.pro>",
+  "homepage": "http://icks.ntohqdevelopers.com",
+  "license": "MIT",
+  "directories": {
+    "test": "__tests__",
+    ".vscode": ".vscode",
+    "public": "public",
+    "src": "src"
+  },
+  "files": [
+    "index.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntohq/icks.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node ./__tests__/docs.test.js",
+    "test:unit": "node ./__tests__/docs.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ntohq/icks/issues"
   },
   "dependencies": {
     "vue": "^3.3.4"
