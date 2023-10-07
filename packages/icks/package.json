@@ -1,20 +1,26 @@
 {
   "name": "icks",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
+  "type": "module",
   "description": "A Javascript Library created to help you implament all the \"icks\" (Physics, Dynamics, Mechanics, ect) in engeneering into your programs. This Library will include an advanced collection of tools and a physics engien.",
   "keywords": [
-    "javascript",
+    "physics",
+    "math-lib",
     "nodejs",
-    "node-lib",
-    "physics"
+    "javascript",
+    "typescript",
+    "CommonJS",
+    "esJS"
   ],
   "author": "Wesley Ford <wes@wesdev.pro>",
   "homepage": "http://icks.ntohqdevelopers.com",
   "license": "MIT",
-  "main": "lib/icks.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "types/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "src": "src",
+    "types": "types",
     "test": "__tests__"
   },
   "files": [
@@ -26,16 +32,21 @@
   },
   "scripts": {
     "test": "node ./__tests__/icks.test.js",
-    "test:unit": "node ./__tests__/unit.test.js"
+    "build": "rollup -c && tsc -b",
+    "build:js": "rollup -c",
+    "build:types": "tsc -b"
   },
   "bugs": {
     "url": "https://github.com/ntohq/icks/issues"
   },
-  "dependencies": {
-    "nodemon": "^3.0.1"
-  },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "vitest": "^0.34.6"
+    "@babel/core": "^7.23.0",
+    "@babel/parser": "^7.23.0",
+    "@babel/types": "^7.23.0",
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.2",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.0.2",
+    "typescript": "^5.2.2"
   }
 }
