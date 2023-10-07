@@ -14,14 +14,13 @@
   ],
   "author": "Wesley Ford <wes@wesdev.pro>",
   "homepage": "http://icks.ntohqdevelopers.com",
-  "author": "Wesley Ford <wes@wesdev.pro>",
-  "homepage": "http://icks.ntohqdevelopers.com",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "types/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "src": "src",
+    "types": "types",
     "test": "__tests__"
   },
   "files": [
@@ -38,7 +37,6 @@
     "build:types": "tsc -b"
   },
   "bugs": {
-    "url": "https://github.com/ntohq/icks/issues"
     "url": "https://github.com/ntohq/icks/issues"
   },
   "devDependencies": {
