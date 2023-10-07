@@ -30,10 +30,11 @@
     "url": "git+https://github.com/ntohq/icks.git"
   },
   "scripts": {
-    "test": "node ./__tests__/icks.test.js",
     "build": "rollup -c --bundleConfigAsCjs && tsc -b",
     "build:js": "rollup -c",
-    "build:types": "tsc -b"
+    "build:types": "tsc -b",
+    "test": "node ./__tests__/icks.test.js",
+    "lint": "npx eslint ./src"
   },
   "bugs": {
     "url": "https://github.com/ntohq/icks/issues"
@@ -45,6 +46,9 @@
     "@rollup/plugin-commonjs": "^25.0.5",
     "@rollup/plugin-node-resolve": "^15.2.2",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.51.0",
     "rollup": "^4.0.2",
     "typescript": "^5.2.2"
   }

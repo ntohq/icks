@@ -1,2 +1,2 @@
 # icks
-A Javascript Library created to help you implament all the "icks" (Physics, Dynamics, Mechanics, ect) in engeneering into your programs. This Library will include an advanced collection of tools and a physics engien.
+A Javascript Library created to help you implement all the "icks" (Physics, Dynamics, Mechanics, ect) in engineering into your programs. This Library will include an advanced collection of tools and a physics engine.
