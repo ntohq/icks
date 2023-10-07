@@ -7,15 +7,15 @@
 
 ## Prerequisites
 
-This project requires NodeJS (version 8 or later) and NPM.
+This project requires NodeJS (version 18 or later) and NPM.
 [Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
 To make sure you have them available on your machine,
 try running the following command.
 
 ```sh
 $ npm -v && node -v
-6.4.1
-v8.16.0
+x.x.x
+v18.x.x
 ```
 
 ## Table of contents
@@ -52,20 +52,20 @@ These instructions will get you a copy of the project up and running on your loc
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone https://github.com/ORG/PROJECT.git
-$ cd PROJECT
+$ git clone https://github.com/ntohq/icks.git
+$ cd icks
 ```
 
 To install and set up the library, run:
 
 ```sh
-$ npm install -S myLib
+$ npm install -S icks
 ```
 
 Or if you prefer using Yarn:
 
 ```sh
-$ yarn add --dev myLib
+$ yarn add icks
 ```
 
 ## Usage
@@ -238,23 +238,14 @@ const ChuckNorrisJokes: React.FC = () => {
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-1.  Fork it!
-2.  Create your feature branch: `git checkout -b my-new-feature`
-3.  Add your changes: `git add .`
-4.  Commit your changes: `git commit -am 'Add some feature'`
-5.  Push to the branch: `git push origin my-new-feature`
-6.  Submit a pull request :sunglasses:
-
 ## Credits
 
 TODO: Write credits
 
 ## Built With
 
-* Dropwizard - Bla bla bla
-* Maven - Maybe
-* Atom - ergaerga
-* Love
+* Typescript
+* Rollup
 
 ## Versioning
 
@@ -268,4 +259,4 @@ See also the list of [contributors](https://github.com/ntohq/icks/contributors) 
 
 ## License
 
-[MIT License](https://andreasonny.mit-license.org/2019) © ntohq (aka. ntohqdevelopers)
+[MIT License](https://github.com/ntohq/icks/blob/main/LICENSE) © ntohq (aka. ntohqdevelopers)
