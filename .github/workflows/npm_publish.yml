@@ -17,9 +17,9 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org/'
           scope: '@ntohq'
-      - run: npm -w icks-test install
-      - run: npm -w icks-test ci
-      - run: npm -w icks-test run build
-      - run: npm -w icks-test publish --access public
+      - run: npm -w icks install
+      - run: npm -w icks ci
+      - run: npm -w icks run build
+      - run: npm -w icks publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
