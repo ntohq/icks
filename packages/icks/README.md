@@ -162,7 +162,7 @@ type Joke = {
     id: number;
     joke: string;
   };
-};
+}
 
 const MyComponent: React.FC = () => {
   const { data, error, loading } = useBasicFetch<Joke>('https://api.icndb.com/jokes/random', 2000);
