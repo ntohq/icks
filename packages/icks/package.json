@@ -29,7 +29,7 @@
       "import": "./lib/index.mjs"
     },
     "./package.json": "./package.json",
-    "./locales/*": "./lib/locales/*"
+    "./exports/*": "./lib/library/*"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,10 @@
     "build:types": "tsc -p ./configs/tsconfig.types.json",
     "build:test": "tsc -p ./configs/tsconfig.test.json",
     "clean": "rm -rf lib/*",
+    "lint:check": "eslint --cache --ext .ts ./src",
+    "lint:fix": "eslint --cache --fix --ext .ts ./src",
+    "prettier:check": "prettier --check src/**/*.ts --no-error-on-unmatched-pattern",
+    "prettier:fix": "prettier --write src/**/*.ts --ignore-unknown --no-error-on-unmatched-pattern",
     "test": "rollup --config ./configs/rollup.config.js"
   },
   "bugs": {
@@ -55,8 +59,11 @@
     "@types/benchmark": "^2.1.0",
     "@types/jest": "^29.2.2",
     "@types/node": "14",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
     "rollup": "^4.0.2",
     "typescript": "^5.2.2"
   }

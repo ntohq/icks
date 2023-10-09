@@ -1,2 +1,2 @@
-export * from './library/Math';
-export * from './library/Vector';
+export * from "./library/Math";
+export * from "./library/Vector";
