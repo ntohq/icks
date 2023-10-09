@@ -1,7 +1,6 @@
 {
   "name": "icks",
-  "version": "0.0.3",
-  "type": "module",
+  "version": "0.0.4",
   "description": "A Javascript Library created to help you implament all the \"icks\" (Physics, Dynamics, Mechanics, ect) in engeneering into your programs. This Library will include an advanced collection of tools and a physics engien.",
   "keywords": [
     "physics",
@@ -40,7 +39,7 @@
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
-    "build:esm": "rollup --config ./configs/rollup.config.js",
+    "build:esm": "rollup --config ./configs/rollup.config.js --bundleConfigAsCjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "build:types": "tsc -p ./configs/tsconfig.types.json",
     "build:test": "tsc -p ./configs/tsconfig.test.json",
