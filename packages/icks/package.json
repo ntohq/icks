@@ -15,6 +15,13 @@
   "author": "Wesley Ford <wes@wesdev.pro>",
   "homepage": "http://icks.ntohqdevelopers.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntohq/icks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntohq/icks/issues"
+  },
   "types": "./index.d.ts",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
@@ -31,10 +38,6 @@
     "./package.json": "./package.json",
     "./exports/*": "./lib/library/*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ntohq/icks.git"
-  },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
     "build:esm": "rollup --config ./configs/rollup.config.js",
@@ -47,9 +50,6 @@
     "prettier:check": "prettier --check src/**/*.ts --no-error-on-unmatched-pattern",
     "prettier:fix": "prettier --write src/**/*.ts --ignore-unknown --no-error-on-unmatched-pattern",
     "test": "rollup --config ./configs/rollup.config.js"
-  },
-  "bugs": {
-    "url": "https://github.com/ntohq/icks/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
