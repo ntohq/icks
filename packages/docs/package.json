@@ -1,40 +1,26 @@
 {
   "name": "docs",
-  "private": true,
+  "type": "module",
   "version": "0.0.1",
   "description": "The documentation static website for the ICKS Lib",
-  "type": "module",
   "author": "Wesley Ford <wes@wesdev.pro>",
   "homepage": "http://icks.ntohqdevelopers.com",
-  "license": "MIT",
-  "directories": {
-    "test": "__tests__",
-    ".vscode": ".vscode",
-    "public": "public",
-    "src": "src"
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "files": [
-    "index.html"
-  ],
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/vue": "^3.0.1",
+    "astro": "^3.3.2",
+    "tailwindcss": "^3.0.24",
+    "vue": "^3.2.30"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ntohq/icks.git"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "node ./__tests__/docs.test.js",
-    "test:unit": "node ./__tests__/docs.test.js"
-  },
-  "bugs": {
-    "url": "https://github.com/ntohq/icks/issues"
-  },
-  "dependencies": {
-    "vue": "^3.3.4"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.4.5"
   }
 }
